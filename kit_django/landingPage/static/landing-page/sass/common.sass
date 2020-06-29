@@ -1,0 +1,49 @@
+// ----------------------------------------------------------------------------------------------------
+// IMPORTS
+// ----------------------------------------------------------------------------------------------------
+@import "../../../../commonStatic/static/common-static/sass/common"
+
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------------
+// CODE
+// ----------------------------------------------------------------------------------------------------
+.common-content-container
+
+    margin                          : 0 auto 0 auto
+    width                           : 960px
+    text-align                      : center
+
+.common-button-container
+
+    margin-bottom                       : 30px
+    display                             : grid
+    grid-auto-columns                   : auto auto
+    grid-column-gap                     : 10px
+    justify-content                     : center
+
+    a
+        grid-column                     : 1 / 2
+
+        &:last-child
+
+            grid-column                 : 2 / 3
+
+@media only screen and (max-width: 1100px)
+
+    .common-button-container
+
+        grid-auto-columns                   : auto
+        grid-column-gap                     : 0
+        grid-row-gap                        : 10px
+
+        a
+            grid-column                     : 1 / 2
+
+            &:last-child
+
+                grid-column                 : 1 / 2

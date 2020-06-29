@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "0bd18b88-d91d-4e88-b3fb-d5a6b533f386",
+		"name": "contact - SocialMedia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "context",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "twitter",
+							"type": "text"
+						},
+						{
+							"key": "icon",
+							"value": "fab fa-twitter",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "Twitter",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://twitter.com/safakoner",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/social-medias/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"social-medias",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "context",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "twitter",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "icon",
+							"value": "fab fa-twitter",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "label",
+							"value": "Twitter",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "url",
+							"value": "https://twitter.com/safakoner",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/social-medias/5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"social-medias",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Collection",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/social-medias/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"social-medias",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/social-medias/5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"social-medias",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/social-medias/5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"social-medias",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

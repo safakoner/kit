@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "db2ef089-ce6e-437d-8191-f6a043dbdbc7",
+		"name": "content - Content",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "context",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "primaryHeader",
+							"type": "text"
+						},
+						{
+							"key": "content_type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "order",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "icon",
+							"value": "fab fa-python",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "Why do we use it?",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Django makes it easier to build better web apps more quickly and with less code. Django Kit takes it one step further and gives you plenty of built-in functionalities.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/contents/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"contents",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "context",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "primaryHeader",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "content_type",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "order",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "icon",
+							"value": "fab fa-python",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "Why should we use it?",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Django makes it easier to build better web apps more quickly and with less code. Django Kit takes it one step further and gives you plenty of built-in functionalities.",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/contents/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"contents",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Collection",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/contents/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"contents",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/contents/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"contents",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/contents/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"contents",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,29 @@
+{% load static %}
+{% load markdownExtras %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="{% static "conversion/css/conversion-subscribed-result-rnd.css" %}"/>
+
+    <link rel="shortcut icon" href="{% static "conversion/img/favicon.ico" %}" type="image/x-icon">
+
+    <title>{{ conversion.label }}</title>
+
+</head>
+
+<body>
+
+    <div class="conversion-subscribed-result-rnd">
+
+        <h1>{{ conversion.label }}</h1>
+
+        {{ conversion.success_page_body|markdown|safe }}
+
+    </div>
+
+</body>
+
+</html>

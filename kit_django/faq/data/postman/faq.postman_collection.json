@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "f528e086-b5a7-430a-ace3-643b0f871957",
+		"name": "faq - FAQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "context",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "loremIpsum",
+							"type": "text"
+						},
+						{
+							"key": "order",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "question",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry?",
+							"type": "text"
+						},
+						{
+							"key": "answer",
+							"value": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+							"type": "text"
+						},
+						{
+							"key": "keywords",
+							"value": "some keyword here",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/faqs/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"faqs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "context",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "loremIpsum",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "order",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "question",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry?",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "answer",
+							"value": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "keywords",
+							"value": "some keyword here",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/faqs/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"faqs",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Collection",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/faqs/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"faqs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/faqs/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"faqs",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/faqs/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"faqs",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

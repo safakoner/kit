@@ -1,0 +1,103 @@
+{% load static %}
+{% load markdownExtras %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="{% static "common-static/libs/jquery/3.5.1/jquery-3.5.1.min.js" %}"></script>
+
+    <script src="{% static "conversion/js/conversion-rnd.js" %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static "conversion/css/conversion-rnd.css" %}"/>
+
+    <link rel="shortcut icon" href="{% static "conversion/img/favicon.ico" %}" type="image/x-icon">
+
+    <title>{{ conversion.label }}</title>
+
+    <style>
+        .background-image
+        {
+            background-image: url({% get_media_prefix %}{{ conversion.background_image }});
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="conversion-rnd-header-container background-image">
+
+        <div class="conversion-rnd-grid-container">
+
+            <div class="conversion-rnd-grid-left">
+
+                {{ conversion.primary_title|markdown|safe }}
+                {{ conversion.secondary_title|markdown|safe }}
+
+            </div>
+
+            <div class="conversion-rnd-grid-right">
+
+                <form action="/conversion/{{ conversion.url_id }}/" method="POST">
+
+                    <div class="conversion-rnd-subscribe">
+                        {% csrf_token %}
+
+                        <div class="title">Join for Updates</div>
+
+                        {{ form.name }}
+
+                        {% if form.name.errors|striptags %}
+                        <div class="">{{ form.name.errors|striptags }}</div>
+                        {% endif %}
+
+                        {{ form.email }}
+
+                        {% if form.email.errors|striptags %}
+                        <div class="">{{ form.email.errors|striptags }}</div>
+                        {% endif %}
+
+                        <canvas id="capthca" class="capthca" width="80px" height="38px">
+                            Your browser does not support the canvas element.
+                        </canvas>
+
+                        {{ form.capthca }}
+
+                        {% if form.capthca.errors|striptags %}
+                        <div class="error">{{ form.capthca.errors|striptags }}</div>
+                        {% endif %}
+
+                        <button type="submit" class="">Join</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="conversion-rnd-body-container">
+
+        <div class="conversion-rnd-grid-container">
+
+            <div class="conversion-rnd-grid-left">
+                {{ conversion.body|markdown|safe }}
+            </div>
+
+        </div>
+
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+</body>
+
+</html>

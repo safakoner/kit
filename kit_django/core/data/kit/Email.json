@@ -1,0 +1,25 @@
+[
+    {
+        "is_active" : true,
+        "note"      : "",
+        "context"   : "kit",
+        "language"  : "en-us",
+        "code"      : "sales",
+        "icon"      : "fas fa-credit-card",
+        "label"     : "Sales",
+        "email"     : "sales@domain.com",
+        "url"       : ""
+    },
+    {
+        "is_active" : true,
+        "note"      : "",
+        "context"   : "kit",
+        "language"  : "en-us",
+        "code"      : "support",
+        "icon"      : "fas fa-life-ring",
+        "label"     : "Support",
+        "email"     : "support@domain.com",
+        "url"       : ""
+    }
+
+]

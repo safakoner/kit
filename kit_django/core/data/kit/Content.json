@@ -1,0 +1,29 @@
+[
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "primaryHeader",
+        "content_type"      : "primaryHeader",
+        "order"             : 1,
+        "icon"              : null,
+        "image"             : null,
+        "title"             : "",
+        "body"              : "Django makes it easier to build better web apps more quickly and with less code. Kit takes it one step further and gives you plenty of built-in functionalities."
+    },
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "secondaryHeader",
+        "content_type"      : "secondaryHeader",
+        "order"             : 2,
+        "icon"              : null,
+        "image"             : null,
+        "title"             : "",
+        "body"              : "You can use built-in apps like conversion and landing page to get your web site up and running in no time. Incorporate additional apps like newsletter, FAQ, testimonials and more. Publish REST API for users and customers, which is provided for all the models in the project. Edit, customize, deploy and enjoy!"
+    }
+
+]

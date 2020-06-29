@@ -1,0 +1,128 @@
+// ----------------------------------------------------------------------------------------------------
+// IMPORTS
+// ----------------------------------------------------------------------------------------------------
+@import "common"
+@import "widget"
+@import "builtin"
+
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------------
+// CODE
+// ----------------------------------------------------------------------------------------------------
+.conversion-rnd-grid-container
+
+    display                         : grid
+    grid-template-columns           : 3fr 1fr
+    grid-gap                        : 40px
+    margin                          : 0 auto 0 auto
+
+.conversion-rnd-grid-left
+
+.conversion-rnd-grid-right
+
+//
+
+.conversion-rnd-header-container
+
+    @extend .common-unselectable
+
+    color                           : $color-fg-light-1
+    padding                         : 70px 70px 70px 70px
+    margin                          : auto
+    background-position             : center
+    background-repeat               : no-repeat
+    background-size                 : cover
+    background-color                : black
+    opacity                         : 1.0
+
+    h1
+        color                       : $color-h1-fg-light
+        text-shadow                 : 0 0 6px #1e1e1e !important
+
+    h2
+        color                       : $color-h2-fg-light
+        text-shadow                 : 0 0 10px #000000 !important
+
+.conversion-rnd-subscribe
+
+    display                         : grid
+    grid-template-columns           : 80px auto
+    grid-gap                        : 8px
+
+    width                           : 380px
+    padding                         : 20px 20px 20px 20px
+    background-color                : $color-bg-light-1
+    border-radius                   : 8px
+    box-shadow                      : 0 0 30px #3d3d3d !important
+
+    .title
+        grid-column                 : 1 / 3
+        color                       : $color-fg-dark-1
+        font-weight                 : bold
+
+    input
+        grid-column                 : 1 / 3
+
+        &:nth-child(6)
+            grid-column             : 2 / 3
+
+    .capthca
+        grid-column                 : 1 / 2
+
+    button
+        grid-column                 : 1 / 3
+        height                      : 40px
+        font-weight                 : bold
+
+    .error
+        grid-column                 : 1 / 3
+        color                       : $color-critical
+
+
+.conversion-rnd-body-container
+
+    @extend .common-unselectable
+
+    padding                         : 20px 70px 70px 70px
+
+//
+
+@media only screen and (max-width: 1100px)
+
+    h1
+        font-size                       : 3.0em
+
+    h2
+        font-size                       : 2.0em
+
+    .conversion-rnd-grid-container
+
+        grid-template-columns           : 1fr
+
+    .conversion-rnd-subscribe
+
+        width                           : inherit
+
+        .title
+            display                     : none
+
+        button
+            grid-column                 : 1 / 3
+
+        a
+            display                     : none
+
+    .conversion-rnd-body-container
+
+        .conversion-rnd-grid-container
+
+            .conversion-rnd-grid-left
+
+                p, li
+
+                    font-size           : 1.4em

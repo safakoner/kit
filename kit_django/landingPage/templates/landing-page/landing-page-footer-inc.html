@@ -1,0 +1,71 @@
+
+
+<div class="landing-page-footer-inc-container">
+
+    <div class="landing-page-footer-inc">
+
+        <div class="content">
+
+            <h4>Content</h4>
+
+            <div class="line"></div>
+
+            {% for itemContentType in context.data.itemContentTypes %}
+
+            <a href="#{{ itemContentType.label }}">
+                <i class="{{ itemContentType.icon }} fa-1x"></i>
+                <span>{{ itemContentType.label }}</span>
+            </a>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="social">
+
+            <h4>Social</h4>
+
+            <div class="line"></div>
+
+            {% for socialMedia in context.data.socialMedias %}
+
+            <a href="{{ socialMedia.url }}" target="_blank">
+                <i class="{{ socialMedia.icon }} fa-1x"></i>
+                <span>{{ socialMedia.label }}</span>
+            </a>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="contact">
+
+            <h4>Contact</h4>
+
+            <div class="line"></div>
+
+            {% for address in context.data.addresses %}
+
+            {% if address.url %}
+
+            <a href="{{ address.url }}" target="_blank">
+                <i class="{{ address.icon }} fa-1x"></i>
+                <span>{{ address.address }}</span>
+            </a>
+
+            {% else %}
+
+            <div>
+                <i class="{{ address.icon }} fa-1x"></i>
+                <span>{{ address.address }}</span>
+            </div>
+
+            {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</div>

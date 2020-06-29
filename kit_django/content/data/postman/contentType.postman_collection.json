@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "b4cd739b-ee4f-4fa1-9ee9-93a2e43db7f5",
+		"name": "content - ContentType",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "context",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "benefits",
+							"type": "text"
+						},
+						{
+							"key": "icon",
+							"value": "fas fa-trophy",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "Benefits",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/content-types/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"content-types",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "context",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "benefits",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "icon",
+							"value": "fas fa-check",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "Benefits",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/content-types/6/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"content-types",
+						"6",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Collection",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/content-types/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"content-types",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/content-types/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"content-types",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/content-types/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"content-types",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

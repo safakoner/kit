@@ -1,0 +1,128 @@
+// ----------------------------------------------------------------------------------------------------
+// IMPORTS
+// ----------------------------------------------------------------------------------------------------
+@import "color"
+@import "font"
+@import "common"
+
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------------
+// CODE
+// ----------------------------------------------------------------------------------------------------
+.input
+
+    margin                          : 5px 0 5px 0
+    padding                         : 6px
+
+    text-align                      : left
+
+    font-size                       : 1.0em
+    font-family                     : $common-font-family-2, $common-font-family-1, sans-serif !important
+
+    border-radius                   : $common-widget-border-radius
+    border                          : 1px solid $color-input-border-fg-dark
+
+    color                           : $color-input-fg-dark !important
+    background                      : $color-input-bg-light
+
+    -moz-appearance                 : none
+    -webkit-appearance              : none
+    appearance                      : none
+
+    &::-webkit-input-placeholder, &::placeholder
+
+        color                       : $color-input-placeholder-fg-dark !important
+        font-family                 : $common-font-family-2, $common-font-family-1, sans-serif !important
+
+    &:focus
+        outline                     : none !important
+        border                      : 1px solid lighten($color-input-border-focus-fg-dark, 20) !important
+        box-shadow                  : 0 0 5px lighten($color-input-border-focus-fg-dark, 20) !important
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=date],
+input[type=file],
+select,
+textarea
+
+    @extend .input
+
+canvas
+
+    height                      : 33px
+    width                       : 100%
+
+    border-radius               : $common-widget-border-radius
+    border                      : 1px solid $color-input-border-fg-dark
+
+    background-color            : white
+
+
+
+.widget-button
+
+    @extend .common-unselectable
+
+    display                         : inline-block !important
+    padding                         : 12px 16px 10px 16px
+
+    font-size                       : 1.0em
+    font-family                     : $common-font-family-2, $common-font-family-1, sans-serif !important
+
+    color                           : $color-button-fg-light-1
+    background-color                : $color-button-bg-dark-1
+
+    border-radius                   : $common-widget-border-radius
+    border                          : solid 1px $color-button-bg-dark-1
+
+    &:hover
+        cursor                      : pointer
+        color                       : $color-button-fg-light-1
+        background-color            : $color-button-hover-bg-dark-1
+        border                      : solid 1px $color-button-hover-bg-dark-1
+
+    i
+        margin-right                : 6px
+
+    span
+        color                       : $color-button-fg-light-1
+
+input[type=submit], button
+
+    @extend .widget-button
+
+.button-solid
+
+    @extend .widget-button
+
+.button-wireframe
+
+    @extend .widget-button
+
+    color                           : $color-button-fg-dark-1
+    background-color                : transparent
+
+    border-radius                   : $common-widget-border-radius
+    border                          : solid 2px $color-button-fg-dark-1
+
+    &:hover
+        cursor                      : pointer
+        color                       : $color-button-fg-light-1
+        background-color            : $color-button-fg-dark-1
+        border                      : solid 2px $color-button-fg-dark-1
+
+        i, span
+
+            color                   : $color-button-fg-light-1
+
+    i, span
+
+        color                       : $color-button-fg-dark-1

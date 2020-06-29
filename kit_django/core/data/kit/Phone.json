@@ -1,0 +1,27 @@
+[
+    {
+        "is_active"     : true,
+        "note"          : "",
+        "context"       : "kit",
+        "language"      : "en-us",
+        "code"          : "headquarter",
+        "icon"          : "fas fa-landmark",
+        "label"         : "Headquarter",
+        "country_code"  : "+1",
+        "area_code"     : "604",
+        "phone_number"  : "111 2233"
+    },
+    {
+        "is_active"     : true,
+        "note"          : "",
+        "context"       : "kit",
+        "language"      : "en-us",
+        "code"          : "office",
+        "icon"          : "fas fa-building",
+        "label"         : "Office",
+        "country_code"  : "+1",
+        "area_code"     : "700",
+        "phone_number"  : "555 6677"
+    }
+
+]

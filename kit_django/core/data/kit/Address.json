@@ -1,0 +1,19 @@
+[
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "headquarter",
+        "icon"              : "fas fa-map-marker-alt",
+        "label"             : "Headquarter",
+        "address_line_1"    : "400 319 W Hastings St.",
+        "address_line_2"    : "",
+        "postal_code"       : "V6B 1H6",
+        "city"              : "Vancouver",
+        "state"             : "BC",
+        "country"           : "Canada",
+        "url"               : "https://www.google.com/maps/place/319+W+Hastings+St,+Vancouver,+BC+V6B+1H6/data=!4m2!3m1!1s0x54867179af0a5e81:0xc32666c533a3a55c?sa=X&ved=2ahUKEwjZj7b_45HqAhWxHTQIHf9vCqoQ8gEwAHoECAsQAQ"
+    }
+
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "is_active"     : true,
+        "note"          : "",
+        "icon"          : "fab fa-python",
+        "code"          : "dk",
+        "label"         : "Kit",
+        "domain"        : "kit",
+        "description"   : "Kit - Django Project",
+        "image"         : null
+
+    }
+
+]

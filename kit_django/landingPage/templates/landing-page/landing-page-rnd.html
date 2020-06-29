@@ -1,0 +1,292 @@
+{% load static %}
+{% load markdownExtras %}
+
+{% load headerTags %}
+{% load footerTags %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/5f75faf530.js" crossorigin="anonymous"></script>
+
+    <script src="{% static "common-static/libs/jquery/3.5.1/jquery-3.5.1.min.js" %}"></script>
+
+    <script src="{% static "common-static/libs/fancybox/3.5.7/jquery.fancybox.min.js" %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static "common-static/libs/fancybox/3.5.7/jquery.fancybox.min.css" %}"/>
+
+    <script src="{% static "landing-page/js/landing-page-rnd.js" %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static "landing-page/css/landing-page-rnd.css" %}"/>
+
+    <link rel="shortcut icon" href="{% static "landing-page/img/favicon.ico" %}" type="image/x-icon">
+
+    <title>{{ data.context.label }}</title>
+</head>
+
+<body>
+
+    <div id="top"></div>
+
+    <site-data data-domain="{{ contextDomain }}"
+               data-language="{{ languageCode }}"
+               data-anchor="{{ anchor }}"></site-data>
+
+    {% renderHeader %}
+
+
+
+    <div class="landing-page-rnd-sections-container">
+
+    {% for key, value in data.items.items %}
+    <div id="{{ key }}" class="landing-page-rnd-section-container">
+
+        <div class="landing-page-rnd-section">
+
+            <h1>{{key}}</h1>
+
+            <div class="item-container">
+
+            {% for item in value %}
+
+            <div class="item">
+
+            {% if item.url %}
+            <a  class="item" href="{{ item.url }}" target="_blank">
+            {% endif %}
+
+                <i class="{{ item.icon }} fa-3x" aria-hidden="true"></i>
+
+                <h3>{{ item.title }}</h3>
+
+                <span>{{ item.body }}</span>
+
+            {% if item.url %}
+            </a>
+            {% endif %}
+
+            </div>
+
+            {% endfor %}
+
+            </div>
+
+            <div class="landing-page-header-button-container">
+
+                <a data-fancybox class="button-wireframe" href="https://www.youtube.com/embed/IXS74qRII9s?vq=hd1080">
+                    <i class="fas fa-play-circle fa-1x"></i>
+                    <span>Watch the video</span>
+                </a>
+
+                <a class="button-wireframe" href="#Contact">
+                    <i class="fas fa-download fa-1x"></i>
+                    <span>Free Trial</span>
+                </a>
+
+            </div>
+
+            <div class="top-button">
+                <a href="#top">
+                    <i class="far fa-arrow-alt-circle-up fa-1x"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    {% endfor %}
+
+    {% if data.testimonials %}
+    <div id="Testimonials" class="landing-page-rnd-section-container">
+
+        <div class="landing-page-rnd-section">
+
+            <h1>Testimonials</h1>
+
+            <div class="landing-page-rnd-testimonial-container">
+
+                {% for testimonial in data.testimonials %}
+
+                    {% if testimonial.url %}
+                        <a class="testimonial" href="{{ testimonial.url }}" target="_blank">
+                    {% else %}
+                        <div class="testimonial">
+                    {% endif %}
+
+                        <i class="fas fa-quote-right"></i>
+
+                        <div class="body">"{{ testimonial.body }}"</div>
+
+                        <span><strong>{{ testimonial.name }}</strong> {{ testimonial.job_title }}, {{ testimonial.company }}</span>
+
+                    {% if not testimonial.url %}
+                        </div>
+                    {% else %}
+                        </a>
+                    {% endif %}
+
+                {% endfor %}
+
+            </div>
+
+            <div class="landing-page-header-button-container">
+
+                <a data-fancybox class="button-wireframe" href="https://www.youtube.com/embed/IXS74qRII9s?vq=hd1080">
+                    <i class="fas fa-play-circle fa-1x"></i>
+                    <span>Watch the video</span>
+                </a>
+
+                <a class="button-wireframe" href="#Contact">
+                    <i class="fas fa-download fa-1x"></i>
+                    <span>Free Trial</span>
+                </a>
+
+            </div>
+
+            <div class="top-button">
+                <a href="#top">
+                    <i class="far fa-arrow-alt-circle-up fa-1x"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    {% endif %}
+
+    <div id="Contact" class="landing-page-rnd-section-container">
+
+        <div class="landing-page-rnd-section">
+
+            <h1>Contact</h1>
+
+            <form action="/" method="POST">
+            <div class="landing-page-rnd-contact-form-container">
+
+            {% csrf_token %}
+
+            {{ contactForm.context_domain }}
+
+            {{ contactForm.language_code }}
+
+            {{ contactForm.name }}
+
+            {{ contactForm.company }}
+
+            {{ contactForm.email }}
+
+            {{ contactForm.subject }}
+
+            {{ contactForm.message }}
+
+            <canvas id="contactFormCapthca" class="capthca" height="33px">
+                Your browser does not support the canvas element.
+            </canvas>
+
+            {{ contactForm.capthca }}
+
+
+            {% if contactForm.name.errors|striptags %}
+            <span>{{ contactForm.name.errors|striptags }}</span>
+            {% endif %}
+
+            {% if contactForm.company.errors|striptags %}
+            <span>{{ contactForm.company.errors|striptags }}</span>
+            {% endif %}
+
+            {% if contactForm.email.errors|striptags %}
+            <span>{{ contactForm.email.errors|striptags }}</span>
+            {% endif %}
+
+            {% if contactForm.subject.errors|striptags %}
+            <span>{{ contactForm.subject.errors|striptags }}</span>
+            {% endif %}
+
+            {% if contactForm.message.errors|striptags %}
+            <span>{{ contactForm.message.errors|striptags }}</span>
+            {% endif %}
+
+            {% if contactForm.capthca.errors|striptags %}
+            <span>{{ contactForm.capthca.errors|striptags }}</span>
+            {% endif %}
+
+            <input type="submit" value="Send">
+
+            </div>
+            </form>
+
+            <div class="top-button">
+                <a href="#top">
+                    <i class="far fa-arrow-alt-circle-up fa-1x"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Newsletter" class="landing-page-rnd-section-container">
+
+        <div class="landing-page-rnd-section">
+
+            <h1>Newsletter</h1>
+
+            <form action="/" method="POST">
+            <div class="landing-page-rnd-newsletter-form-container">
+
+            {% csrf_token %}
+
+            {{ newsletterForm.context_domain }}
+
+            {{ newsletterForm.language_code }}
+
+            {{ newsletterForm.name }}
+
+            {{ newsletterForm.email }}
+
+            <canvas id="newsletterFormCapthca" class="capthca" height="33px">
+                Your browser does not support the canvas element.
+            </canvas>
+
+            {{ newsletterForm.capthca }}
+
+
+            {% if newsletterForm.name.errors|striptags %}
+            <span>{{ newsletterForm.name.errors|striptags }}</span>
+            {% endif %}
+
+            {% if newsletterForm.email.errors|striptags %}
+            <span>{{ newsletterForm.email.errors|striptags }}</span>
+            {% endif %}
+
+            {% if newsletterForm.capthca.errors|striptags %}
+            <span>{{ newsletterForm.capthca.errors|striptags }}</span>
+            {% endif %}
+
+            <input type="submit" value="Join">
+
+            </div>
+            </form>
+
+            <div class="top-button">
+                <a href="#top">
+                    <i class="far fa-arrow-alt-circle-up fa-1x"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+
+    {% renderFooter %}
+
+</body>
+
+</html>

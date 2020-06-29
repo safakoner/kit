@@ -1,0 +1,107 @@
+
+<div class="landing-page-header-content">
+
+    <div class="landing-page-header-container">
+
+        <div class="landing-page-header-quick-links">
+
+            {% for socialMedia in context.data.socialMedias %}
+
+                <a href="{{ socialMedia.url }}" target="_blank">
+                    <i class="{{ socialMedia.icon }}"></i>
+                </a>
+
+                <span class="separator">|</span>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="landing-page-header-brand-and-menu">
+
+            <div class="brand">
+
+                <i class="fab fa-python logo"></i>
+
+                <span class="name">{{ context.data.context.label }}</span>
+
+            </div>
+
+            <div class="menu">
+
+                {% for key, value in context.data.items.items %}
+
+                    <a href="#{{ key }}">{{ key }}</a>
+
+                {% endfor %}
+
+                {% if context.data.testimonials %}
+
+                    <a href="#Testimonials">Testimonials</a>
+
+                {% endif %}
+
+                <a href="#Contact">Contact</a>
+
+                <a class="button-solid" href="#Contact">
+                    <i class="fas fa-comment fa-1x"></i>
+                    <span>Let's Talk</span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="landing-page-header-primary-title">
+
+            {% for key, value in context.data.contents.items %}
+
+                {% if key == "primaryHeader" %}
+
+                    {% for content in value %}
+
+                        <h1>{{ content.body }}</h1>
+
+                    {% endfor %}
+
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+        <div class="landing-page-header-secondary-title">
+
+            {% for key, value in context.data.contents.items %}
+
+                {% if key == "secondaryHeader" %}
+
+                    {% for content in value %}
+
+                        <h2>{{ content.body }}</h2>
+
+                    {% endfor %}
+
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+        <div class="landing-page-header-button-container">
+
+            <a data-fancybox class="button-solid" href="https://www.youtube.com/embed/IXS74qRII9s?vq=hd1080">
+                <i class="fas fa-play-circle fa-1x"></i>
+                <span>Watch the video</span>
+            </a>
+
+            <a class="button-solid" href="#Contact">
+                <i class="fas fa-download fa-1x"></i>
+                <span>Free Trial</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

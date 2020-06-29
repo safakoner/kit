@@ -1,0 +1,79 @@
+// ----------------------------------------------------------------------------------------------------
+// IMPORTS
+// ----------------------------------------------------------------------------------------------------
+@import "color"
+@import "font"
+
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------------
+// CODE
+// ----------------------------------------------------------------------------------------------------
+html, body
+
+    margin                      : 0
+    padding                     : 0
+
+    font-size                   : 100%
+    font-family                 : $common-font-family-1, $common-font-family-2, sans-serif
+
+    scroll-behavior             : smooth
+
+    color                       : $color-fg-dark-1
+    background-color            : $color-bg-light-1
+
+    -webkit-font-smoothing      : antialiased
+    -moz-osx-font-smoothing     : grayscale
+
+*
+    //margin                      : 0
+    //padding                     : 0
+
+    -webkit-box-sizing          : border-box
+    -moz-box-sizing             : border-box
+    box-sizing                  : border-box
+
+a
+    display                     : inline-block
+    text-decoration             : none
+    color                       : $color-a-fg-dark-1
+
+    &:hover
+        text-decoration         : none
+        color                   : $color-a-hover-fg-dark-1
+
+//h1
+//    color                       : $color-h1-fg-dark-1
+
+//h2
+//    color                       : $color-h2-fg-dark-1
+
+//h3
+//    color                       : $color-h3-fg-dark-1
+
+//h4
+//    color                       : $color-h4-fg-dark-1
+
+//span
+//    color                       : $color-fg-dark-1
+
+
+
+// SCROLL BAR
+::-webkit-scrollbar
+    width                   : 16px
+
+// SCROLL HOLD BAR BASE THICKNESS
+::-webkit-scrollbar-track
+    border                  : 1px solid $color-input-border-fg-dark
+    background-color        : $color-bg-light-2
+
+// SCROLL HOLD BAR THICKNESS
+::-webkit-scrollbar-thumb
+
+    border                  : 2px solid $color-a-fg-dark-1
+    background-color        : darken($color-a-fg-dark-1, 10)

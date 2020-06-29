@@ -1,0 +1,13 @@
+[
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "wildcardAPIAccess",
+        "label"             : "Wildcard API Access",
+        "email"             : "",
+        "expiration_date"   : null
+    }
+
+]

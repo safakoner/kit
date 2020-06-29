@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "5b74c9f3-7208-421c-8427-8eb8588bd864",
+		"name": "userAccount - superUser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 05b65f04f0d4dd7757404ee576ba88e661007276",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_superuser",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "is_staff",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "a.dumas@cristo.com",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Alexandre",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Dumas",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "has_account_been_verified",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/admin/user-accounts/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"user-accounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 05b65f04f0d4dd7757404ee576ba88e661007276"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_superuser",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "is_staff",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "alexandre.dumas@cristo.com",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Alexandre",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Dumas",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "has_account_been_verified",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/admin/user-accounts/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"user-accounts",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Collection",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 05b65f04f0d4dd7757404ee576ba88e661007276",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/admin/user-accounts/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"user-accounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 05b65f04f0d4dd7757404ee576ba88e661007276"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/admin/user-accounts/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"user-accounts",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 05b65f04f0d4dd7757404ee576ba88e661007276"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/admin/user-accounts/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"user-accounts",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

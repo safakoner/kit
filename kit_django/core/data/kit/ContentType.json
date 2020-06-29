@@ -1,0 +1,48 @@
+[
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "benefits",
+        "icon"              : "fas fa-trophy",
+        "label"             : "Benefits"
+    },
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "features",
+        "icon"              : "fas fa-check",
+        "label"             : "Features"
+    },
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "primaryHeader",
+        "label"             : "Primary Header"
+    },
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "secondaryHeader",
+        "label"             : "Secondary Header"
+    },
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "resources",
+        "icon"              : "fas fa-list",
+        "label"             : "Resources"
+    }
+
+]
+
+

@@ -1,0 +1,89 @@
+// ----------------------------------------------------------------------------------------------------
+// IMPORTS
+// ----------------------------------------------------------------------------------------------------
+@import "color"
+@import "common"
+
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------------
+// CODE
+// ----------------------------------------------------------------------------------------------------
+.landing-page-footer-inc-container
+
+    @extend .common-unselectable
+    margin                              : 0 auto 0 auto
+
+    color                               : $color-section-footer-fg-light-1
+    background-color                    : $color-section-footer-bg-dark-1
+
+.landing-page-footer-inc-section
+
+    text-align                      : left
+
+    h4
+        color                       : $color-footer-h4-fg-light-1
+
+    .line
+        @extend .common-line
+
+        border-bottom               : 1px solid lighten($color-section-footer-bg-dark-1, 50)
+
+    a, div
+        display                     : block
+        margin-top                  : 10px
+
+        &:hover:not(div)
+            i, span
+                color                   : $color-footer-i-fg-light-1
+                text-shadow             : 0 0 4px darken($color-footer-i-fg-light-1, 20)
+
+        i
+            margin-right            : 4px
+            color                   : $color-footer-i-fg-light-1
+
+        span
+            color                   : $color-footer-span-fg-light-1
+
+.landing-page-footer-inc
+
+    @extend .common-content-container
+    padding                             : 50px 0 100px 0
+
+    display                             : grid
+    grid-template-columns               : auto auto auto
+    grid-gap                            : 45px
+
+    //align-items                         : center
+    //justify-items                       : center
+
+    .content
+
+        @extend .landing-page-footer-inc-section
+        grid-column                     : 1 / 2
+
+    .social
+
+        @extend .landing-page-footer-inc-section
+        grid-column                     : 2 / 3
+
+    .contact
+
+        @extend .landing-page-footer-inc-section
+        grid-column                     : 3 / 4
+
+@media only screen and (max-width: 1100px)
+
+    .landing-page-footer-inc
+
+        padding                         : 0 0 100px 0
+        justify-content                 : center
+
+        .content, .social, .contact
+
+            margin-top                  : 30px
+            grid-column                 : 1 / 1

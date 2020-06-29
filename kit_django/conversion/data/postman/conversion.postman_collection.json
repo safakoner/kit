@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "4540d11a-a604-448f-bbc6-075fe086dffb",
+		"name": "conversion - Conversion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "Note goes here",
+							"type": "text"
+						},
+						{
+							"key": "context",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "Test Page",
+							"type": "text"
+						},
+						{
+							"key": "background_image",
+							"type": "file",
+							"src": "/Users/soner/Downloads/header.jpg"
+						},
+						{
+							"key": "primary_title",
+							"value": "# Primary Title",
+							"type": "text"
+						},
+						{
+							"key": "secondary_title",
+							"value": "## Secondary Title",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "# Lorem Ipsum\n\nis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+							"type": "text"
+						},
+						{
+							"key": "success_page_body",
+							"value": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/conversions/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"conversions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "note",
+							"value": "Note goes here",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "context",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "label",
+							"value": "Test Page",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "background_image",
+							"type": "file",
+							"src": "/Users/soner/Downloads/header.jpg",
+							"disabled": true
+						},
+						{
+							"key": "primary_title",
+							"value": "# New Primary Title",
+							"type": "text"
+						},
+						{
+							"key": "secondary_title",
+							"value": "## Secondary Title",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "body",
+							"value": "# Lorem Ipsum\n\nis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "success_page_body",
+							"value": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/conversions/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"conversions",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Collection",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/conversions/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"conversions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/conversions/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"conversions",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/conversions/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"conversions",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

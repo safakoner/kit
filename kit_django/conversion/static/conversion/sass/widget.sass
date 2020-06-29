@@ -1,0 +1,96 @@
+// ----------------------------------------------------------------------------------------------------
+// IMPORTS
+// ----------------------------------------------------------------------------------------------------
+@import "color"
+@import "font"
+@import "common"
+
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------------
+// CODE
+// ----------------------------------------------------------------------------------------------------
+$border-radius                      : 3px
+
+.input
+
+    //margin                          : 5px 0 5px 0
+    padding                         : 6px
+
+    text-align                      : left
+
+    font-size                       : 1.1em
+    font-family                     : $common-font-family-1, $common-font-family-2, sans-serif !important
+
+    border-radius                   : $border-radius
+    border                          : 1px solid $color-input-border-fg-dark
+
+    color                           : $color-input-fg-dark !important
+    background                      : white
+
+    -moz-appearance                 : none
+    -webkit-appearance              : none
+    appearance                      : none
+
+    &::-webkit-input-placeholder, &::placeholder
+
+        color                       : $color-input-placeholder-fg-dark !important
+        font-family                 : $common-font-family-1, $common-font-family-2, sans-serif !important
+
+    &:focus
+        outline                     : none !important
+
+
+.widget-button
+
+    @extend .common-unselectable
+
+    height                          : 35px
+    display                         : inline-block !important
+    padding                         : 8px 10px 8px 10px
+
+    font-size                       : 1.0em
+    font-family                     : $common-font-family-1, $common-font-family-2, sans-serif !important
+
+    border-radius                   : $border-radius
+    color                           : $color-button-fg-light-1
+    background-color                : $color-button-bg-dark-1
+    border                          : solid 1px $color-button-bg-dark-1
+    outline                         : none !important
+
+    &:hover
+        cursor                      : pointer
+        background-color            : $color-button-hover-bg-dark-1
+        border                      : solid 1px $color-button-hover-bg-dark-1
+        box-shadow                  : none !important
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=date],
+input[type=file]
+
+    @extend .input
+
+button
+
+    @extend .widget-button
+
+canvas
+
+    height                  : 38px
+    width                   : 80px
+    text-align              : left
+
+    -webkit-border-radius   : $border-radius
+    -moz-border-radius      : $border-radius
+    border-radius           : $border-radius
+    border                  : 1px solid $color-input-border-fg-dark
+
+    background-color        : white

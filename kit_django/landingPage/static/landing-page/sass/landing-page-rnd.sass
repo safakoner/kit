@@ -1,0 +1,226 @@
+// ----------------------------------------------------------------------------------------------------
+// IMPORTS
+// ----------------------------------------------------------------------------------------------------
+@import "common"
+@import "builtin"
+@import "widget"
+@import "landing-page-header-inc"
+@import "landing-page-footer-inc"
+
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------------
+// CODE
+// ----------------------------------------------------------------------------------------------------
+.landing-page-rnd-sections-container
+
+
+.landing-page-rnd-section-container
+
+    &:nth-of-type(even)
+        background-color                : $color-section-bg-light-2
+
+    border-bottom                       : 1px solid $color-section-border-bg-light-1
+
+    &:last-child
+        border-bottom                   : none
+
+.landing-page-rnd-section
+
+    @extend .common-unselectable
+    @extend .common-content-container
+
+    padding                             : 60px 0 60px 0
+
+    h1
+        color                           : $color-h1-fg-dark-1
+
+    .item-container
+
+        margin                              : 40px 0 60px 0
+        display                             : grid
+        grid-auto-columns                   : auto auto
+        grid-gap                            : 50px
+        //background-color                    : palegoldenrod
+
+        .item, a
+
+            grid-column                         : 1 / 2
+            //background-color                    : lightblue
+
+            &:nth-of-type(even)
+                grid-column                     : 2 / 3
+                //background-color                : pink
+
+            i
+                margin-bottom                   : 16px
+                color                           : transparent
+                -webkit-text-stroke             : 2px $color-section-i-fg-dark-1
+
+            h3
+                margin-bottom                   : 10px
+                color                           : $color-section-h3-fg-dark-1
+
+            span
+                color                           : $color-section-span-fg-dark-1
+
+        a:hover
+            i
+                color                           : $color-section-i-fg-dark-1
+                -webkit-text-stroke             : initial
+
+    .top-button
+
+        //background-color                        : blue
+
+        a
+            color                               : darken($color-section-border-bg-light-1, 10)
+
+            &:hover
+                color                           : $color-section-i-fg-dark-1
+
+            i
+                font-size                       : 1.2em
+
+@media only screen and (max-width: 1100px)
+
+    .landing-page-rnd-section
+
+        h1
+            font-size                               : 2.4em
+
+        .item-container
+
+            .item, a
+
+                grid-column                         : 1 / 1
+
+                &:nth-of-type(even)
+                    grid-column                     : 1 / 1
+
+                h3
+                    font-size                       : 1.6em
+
+                span
+                    display                         : inline-block
+                    width                           : 700px
+                    font-size                       : 1.2em
+
+.landing-page-rnd-contact-form-container
+
+    margin                                          : 30px 0 30px 0
+    display                                         : grid
+    grid-column-gap                                 : 10px
+    grid-template-columns                           : 25% 25%
+    justify-content                                 : center
+    align-items                                     : center
+
+    input, textarea, select
+
+        grid-column                                 : 1 / 3
+
+    canvas
+
+        grid-column                                 : 1 / 2
+
+    .contact-form-capthca
+
+        grid-column                                 : 2 / 3
+
+    span
+
+        grid-column                                 : 1 / 3
+        text-align                                  : left
+        color                                       : $color-critical
+
+    input[type=submit]
+
+        grid-column                                 : 1 / 3
+        margin-top                                  : 8px
+        font-weight                                 : bold
+
+
+.landing-page-rnd-newsletter-form-container
+
+    margin                                          : 30px 0 30px 0
+    display                                         : grid
+    grid-column-gap                                 : 10px
+    grid-template-columns                           : 25% 25%
+    justify-content                                 : center
+    align-items                                     : center
+
+    .newsletter-form-name
+
+        grid-column                                 : 1 / 2
+
+    .newsletter-form-email
+
+        grid-column                                 : 2 / 3
+
+    canvas
+
+        grid-column                                 : 1 / 2
+
+    .newsletter-form-capthca
+
+        grid-column                                 : 2 / 3
+
+    span
+
+        grid-column                                 : 1 / 3
+        text-align                                  : left
+        color                                       : $color-critical
+
+    input[type=submit]
+
+        grid-column                                 : 1 / 3
+        margin-top                                  : 8px
+        font-weight                                 : bold
+
+
+.landing-page-rnd-testimonial-container
+
+    margin                                          : 30px auto 30px auto
+    text-align                                      : center
+
+    a
+        &:hover
+            color                                   : $color-a-fg-dark-1
+
+            & span
+                color                               : $color-a-fg-dark-1
+
+    .testimonial
+
+        color                                       : $color-section-span-fg-dark-1
+        text-align                                  : justify
+        margin-bottom                               : 60px
+
+        i
+            font-size                               : 1.4em
+            margin-bottom                           : 10px
+            color                                   : $color-section-i-fg-dark-1
+
+        .body
+            margin-bottom                           : 20px
+
+        span
+            color                                   : $color-fg-dark-1
+            margin-bottom                           : 8px
+
+            strong
+                margin-right                        : 6px
+
+@media only screen and (max-width: 1100px)
+
+    .landing-page-rnd-testimonial-container
+
+        width                                       : 800px
+
+        .testimonial
+
+            font-size                               : 1.2em

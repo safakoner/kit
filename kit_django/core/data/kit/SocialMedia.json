@@ -1,0 +1,43 @@
+[
+    {
+        "is_active"     : true,
+        "note"          : "",
+        "context"       : "kit",
+        "language"      : "en-us",
+        "code"          : "twitter",
+        "icon"          : "fab fa-twitter",
+        "label"         : "Twitter",
+        "url"           : "https://twitter.com/safakoner"
+    },
+    {
+        "is_active"     : true,
+        "note"          : "",
+        "context"       : "kit",
+        "language"      : "en-us",
+        "code"          : "blog",
+        "icon"          : "fas fa-blog",
+        "label"         : "Blog",
+        "url"           : "http://blog.stashsoftware.com/"
+    },
+    {
+        "is_active"     : true,
+        "note"          : "",
+        "context"       : "kit",
+        "language"      : "en-us",
+        "code"          : "confluence",
+        "icon"          : "fab fa-confluence",
+        "label"         : "Confluence",
+        "url"           : "https://charmapps.atlassian.net/wiki/spaces/StashSoftware/overview"
+    },
+    {
+        "is_active"     : true,
+        "note"          : "",
+        "context"       : "kit",
+        "language"      : "en-us",
+        "code"          : "pythonAPI",
+        "icon"          : "fab fa-python",
+        "label"         : "Python API",
+        "url"           : "http://api.stashsoftware.com/"
+    }
+
+]

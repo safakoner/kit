@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "c4dee8af-f152-44a4-b75d-8a5861fd50ec",
+		"name": "contact - Address",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "context",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "headquarter",
+							"type": "text"
+						},
+						{
+							"key": "icon",
+							"value": "fas fa-map-marker-alt",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "Headquarter",
+							"type": "text"
+						},
+						{
+							"key": "address_line_1",
+							"value": "400 319 W Hastings St.",
+							"type": "text"
+						},
+						{
+							"key": "address_line_2",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "postal_code",
+							"value": "V6B 1H6",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Vancouver",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "BC",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Canada",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://www.google.com/maps/place/319+W+Hastings+St,+Vancouver,+BC+V6B+1H6/data=!4m2!3m1!1s0x54867179af0a5e81:0xc32666c533a3a55c?sa=X&ved=2ahUKEwjZj7b_45HqAhWxHTQIHf9vCqoQ8gEwAHoECAsQAQ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/addresses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "context",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "headquarter",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "icon",
+							"value": "fas fa-map-marker-alt",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "label",
+							"value": "Branch",
+							"type": "text"
+						},
+						{
+							"key": "address_line_1",
+							"value": "400 319 W Hastings St.",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address_line_2",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "postal_code",
+							"value": "V6B 1H6",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "city",
+							"value": "Vancouver",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "state",
+							"value": "BC",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "country",
+							"value": "Canada",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "url",
+							"value": "https://www.google.com/maps/place/319+W+Hastings+St,+Vancouver,+BC+V6B+1H6/data=!4m2!3m1!1s0x54867179af0a5e81:0xc32666c533a3a55c?sa=X&ved=2ahUKEwjZj7b_45HqAhWxHTQIHf9vCqoQ8gEwAHoECAsQAQ",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/addresses/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"addresses",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Collection",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/addresses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/addresses/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"addresses",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "token 277be7a404d0ecf6cd2c0b91a1aee94b62cbe115"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/addresses/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"addresses",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

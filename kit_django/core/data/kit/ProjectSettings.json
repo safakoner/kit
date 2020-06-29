@@ -1,0 +1,21 @@
+[
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : null,
+        "language"          : "en-us",
+        "code"              : "",
+        "key"               : "isWebSiteEnabled",
+        "value"             : "1"
+    },
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : null,
+        "language"          : "en-us",
+        "code"              : "",
+        "key"               : "isRESTAPIEnabled",
+        "value"             : "1"
+    }
+
+]

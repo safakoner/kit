@@ -1,0 +1,45 @@
+// ----------------------------------------------------------------------------------------------------
+// IMPORTS
+// ----------------------------------------------------------------------------------------------------
+@import "common"
+@import "color"
+@import "builtin"
+@import "widget"
+
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------------
+// CODE
+// ----------------------------------------------------------------------------------------------------
+html, body
+
+    background-color            : $color-bg-light-2
+
+.conversion-unsubscribe-by-uuid-rnd
+
+    @extend .common-unselectable
+
+    width                       : 600px
+    margin                      : 150px auto 0 auto
+    padding                     : 40px
+    text-align                  : left
+    border-radius               : 10px
+    color                       : $color-fg-light-1
+    background-color            : $color-critical
+    box-shadow                  : 0 0 20px #8c8c8c !important
+
+    h1
+        color                   : $color-fg-light-1
+
+    h2
+        color                   : $color-h2-fg-light
+
+    a
+        color                   : $color-fg-light-1
+
+        &:hover
+            text-shadow         : 0 0 4px #b3b3b3 !important

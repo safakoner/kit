@@ -1,0 +1,34 @@
+{% load static %}
+{% load markdownExtras %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="{% static "conversion/css/conversion-subscribe-by-uuid-rnd.css" %}"/>
+
+    <link rel="shortcut icon" href="{% static "conversion/img/favicon.ico" %}" type="image/x-icon">
+
+    <title>{{ conversion.label }}</title>
+
+</head>
+
+<body>
+
+    <div class="conversion-subscribe-by-uuid-rnd">
+
+        <h1>{{ conversion.label }}</h1>
+
+        <h2>You have been subscribed. It's very happy seeing you joining.</h2>
+
+        <p>Didn't mean to subscribe?</p>
+
+        <p><a href="/conversion/{{ conversion.url_id }}/unsubscribe/{{ subscriber.subscriber_id }}">Click here to unsubscribe.</a></p>
+
+
+    </div>
+
+</body>
+
+</html>

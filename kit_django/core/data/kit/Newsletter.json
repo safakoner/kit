@@ -1,0 +1,21 @@
+[
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "",
+        "name"              : "Jules Verne",
+        "email"             : "jverne@thousandleagues.com"
+    },
+    {
+        "is_active"         : true,
+        "note"              : "",
+        "context"           : "kit",
+        "language"          : "en-us",
+        "code"              : "",
+        "name"              : "Alexandre Dumas",
+        "email"             : "a.dumas@cristo.com"
+    }
+
+]

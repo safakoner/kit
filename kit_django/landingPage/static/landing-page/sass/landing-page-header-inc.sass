@@ -1,0 +1,124 @@
+// ----------------------------------------------------------------------------------------------------
+// IMPORTS
+// ----------------------------------------------------------------------------------------------------
+@import "color"
+@import "common"
+
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------------
+// CODE
+// ----------------------------------------------------------------------------------------------------
+.landing-page-header-content
+
+    @extend .common-unselectable
+
+    margin                      : 0 auto 0 auto
+    padding                     : 20px 0 20px 0
+
+    text-align                  : center
+    background-color            : $color-section-header-bg-dark-1
+    background-image            : url(/static/landing-page/img/bg_02.jpg)
+    background-position         : center
+    background-repeat           : no-repeat
+    background-size             : cover
+
+.landing-page-header-container
+
+    @extend .common-content-container
+
+.landing-page-header-quick-links
+
+    margin-bottom               : 16px
+    text-align                  : right
+
+    a
+        color                   : $color-quick-links-a-fg-light-1
+        //margin-left             : 20px
+        &:hover
+            color               : $color-a-fg-dark-1
+
+    .separator
+
+        margin                  : 0 10px 0 10px
+        color                   : lighten($color-section-header-bg-dark-1, 14)
+
+        &:last-child
+            display             : none
+
+.landing-page-header-brand-and-menu
+
+    display                     : grid
+    grid-auto-columns           : auto auto
+    width                       : inherit
+
+    .brand
+
+        grid-column             : 1 / 2
+
+        text-align              : left
+        float                   : left
+        //background-color        : lightblue
+
+        .logo
+            color               : $color-header-brand-i-light-1
+            margin-right        : 10px
+            font-size           : 1.6em
+
+        .name
+            color               : $color-header-brand-span-light-1
+            font-size           : 1.8em
+
+    .menu
+
+        grid-column             : 2 / 3
+
+        vertical-align          : middle
+        text-align              : right
+        //background-color        : lightpink
+
+        a
+            margin-left         : 20px
+            vertical-align      : middle
+            font-size           : 1.1em
+            line-height         : 2.3em
+            //background-color    : lightgray
+
+            &:hover
+                text-shadow         : 0 0 4px darken($color-a-hover-fg-dark-1, 20)
+
+            &.button-solid
+                width               : initial
+                font-size           : initial
+                line-height         : initial
+
+.landing-page-header-primary-title
+
+    margin                      : 40px 0 20px 0
+    //background-color            : blue
+
+    h1
+        color                   : $color-header-h1-fg-light-1
+        font-weight             : normal
+        line-height             : 1.6em
+        text-shadow             : 0 0 10px #292929
+
+.landing-page-header-secondary-title
+
+    margin                      : 20px 0 40px 0
+    //background-color            : red
+
+    h2
+        color                   : $color-header-h2-fg-light-1
+        font-size               : 1.4em
+        font-weight             : normal
+        line-height             : 1.8em
+        text-shadow             : 0 0 10px #292929
+
+.landing-page-header-button-container
+
+    @extend .common-button-container

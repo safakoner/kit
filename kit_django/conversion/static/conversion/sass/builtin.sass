@@ -1,0 +1,52 @@
+// ----------------------------------------------------------------------------------------------------
+// IMPORTS
+// ----------------------------------------------------------------------------------------------------
+@import "common"
+@import "font"
+@import "color"
+
+
+// ----------------------------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------------
+// CODE
+// ----------------------------------------------------------------------------------------------------
+html, body
+
+    margin                      : 0
+    padding                     : 0
+
+    font-size                   : 100%
+    font-family                 : $common-font-family-1, $common-font-family-2, sans-serif
+
+    scroll-behavior             : smooth
+
+    color                       : $color-fg-dark-1
+    background-color            : $color-bg-light-1
+
+    -webkit-font-smoothing      : antialiased
+    -moz-osx-font-smoothing     : grayscale
+
+*
+    -webkit-box-sizing          : border-box
+    -moz-box-sizing             : border-box
+    box-sizing                  : border-box
+
+a
+    display                     : inline-block
+    text-decoration             : none
+    font-weight                 : bold
+    color                       : $color-a-fg-dark-1
+
+    &:hover
+        text-decoration         : none
+        color                   : $color-a-hover-fg-dark-1
+
+h1
+    color                       : $color-h1-fg-dark
+
+h2
+    color                       : $color-h2-fg-dark
